@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-gradient-to-r from-purple-500 to-blue-500 text-white py-4 shadow-md">
+        <nav class="container mx-auto">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="#about" class="hover:text-gray-200">About</a></li>
+                <li><a href="#skills" class="hover:text-gray-200">Skills</a></li>
+                <li><a href="#projects" class="hover:text-gray-200">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="bg-gray-100 py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <img src="https://via.placeholder.com/150" alt="Profile Image" class="w-40 h-40 rounded-full mx-auto mb-4">
+        </div>
+    </section>
+
+    <section id="about" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-gray-700 mb-8">I am a software engineer with 5 years of experience in developing web applications. I am passionate about creating user-friendly and visually appealing websites.</p>
+            <div class="timeline border border-gray-300 rounded-md p-4">
+                <ul>
+                    <li>2020: Graduated from University</li>
+                    <li>2021: Started working as a web developer</li>
+                    <li>2023: Promoted to senior web developer</li>
+                </ul>
+            </div>
+            <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 mt-4">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="skills" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Skills</h2>
+            <div class="skills-container grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="skill">
+                    <h3 class="text-xl font-semibold mb-2">Frontend</h3>
+                    <div class="skill-bar bg-gray-200 rounded-full h-6">
+                        <div class="skill-level bg-blue-500 text-white h-6 rounded-full flex items-center justify-center" style="width: 80%;">HTML</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 class="text-xl font-semibold mb-2">Backend</h3>
+                    <div class="skill-bar bg-gray-200 rounded-full h-6">
+                        <div class="skill-level bg-blue-500 text-white h-6 rounded-full flex items-center justify-center" style="width: 60%;">Node.js</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3 class="text-xl font-semibold mb-2">Design</h3>
+                    <div class="skill-bar bg-gray-200 rounded-full h-6">
+                        <div class="skill-level bg-blue-500 text-white h-6 rounded-full flex items-center justify-center" style="width: 70%;">UI/UX</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Projects</h2>
+            <div class="projects-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="project bg-white rounded-md shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                        <p class="text-gray-700 mb-4">Description of project 1.</p>
+                        <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">View Case Study</a>
+                    </div>
+                </div>
+                <div class="project bg-white rounded-md shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                        <p class="text-gray-700 mb-4">Description of project 2.</p>
+                        <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">View Case Study</a>
+                    </div>
+                </div>
+                <div class="project bg-white rounded-md shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                        <p class="text-gray-700 mb-4">Description of project 3.</p>
+                        <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <form class="max-w-md mx-auto">
+                <input type="text" placeholder="Name" class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4">
+                <input type="email" placeholder="Email" class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4">
+                <textarea placeholder="Message" class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4"></textarea>
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">Send Message</button>
+            </form>
+            <div class="social-links flex justify-center space-x-4 mt-8">
+                <a href="#" class="text-blue-500 hover:text-blue-700">LinkedIn</a>
+                <a href="#" class="text-blue-500 hover:text-blue-700">GitHub</a>
+                <a href="#" class="text-blue-500 hover:text-blue-700">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
